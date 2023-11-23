@@ -5,6 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(109, 184, 207);
+}
 .image {
   position: relative;
   height: 150px;
@@ -12,6 +19,7 @@
   border-radius: 50%;
   background-color: aquamarine;
   padding: 3px;
+  margin-bottom: 20px;
 }
 .image .profile-img {
   height: 100%;
@@ -19,4 +27,51 @@
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #fff;
+}
+.profile-card {
+  background-color: #eef5f3;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 350px;
+  width: 300px;
+  box-shadow: 0 5x 10px rgba(0, 0, 0, 0.3);
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.icons{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icons .link {
+  margin: 0 10px;
+  font-weight: 900;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #fff;
+  background-color: aquamarine;
+}
+.icons .link:hover {
+  color:aquamarine;
+  background-color: #fff;
+  padding: 5px;
+  border: 2px solid aquamarine;
 }
